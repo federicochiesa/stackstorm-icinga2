@@ -17,7 +17,7 @@
           state:
             type: "number"
           state_type:
-            type: "number"
+            type: "string"
           type:
             type: "string"
           timestamp:
