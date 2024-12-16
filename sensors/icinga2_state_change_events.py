@@ -78,7 +78,7 @@ class Icinga2StateChangeSensor(Sensor):
         payload["service"] = event.get("service", "n/a")
         payload["host"] = event["host"]
         payload["state"] = event["state"]
-        payload["state_type"] = event["state_type"]
+        payload["state_type"] = str(event["state_type"])
         payload["type"] = event["type"]
         payload["timestamp"] = event["timestamp"]
         payload["check_result"] = event["check_result"]
